@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Integration Playground – Planet</title>
+  <style>
+    body {font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 40px; line-height:1.5;}
+    .tag {display:inline-block; padding:4px 8px; border:1px solid #ddd; border-radius:12px; font-size:12px; margin-right:6px;}
+    h1 {margin-bottom:4px;} small{color:#666;}
+    section {margin: 24px 0;}
+    code{background:#f7f7f7; padding:2px 6px; border-radius:4px;}
+  </style>
+</head>
+<body>
+  <h1>Integration Playground</h1>
+  <small>Owner: Erick Gutiérrez · Director of Integrations</small>
+  <section>
+    <span class="tag">Payments</span><span class="tag">APIs</span><span class="tag">webhooks</span><span class="tag">PCI</span>
+  </section>
+
+  <section>
+    <h2>Objetivo</h2>
+    <p>Probar y documentar ejemplos mínimos de integración (callbacks, mapping de campos, firmas HMAC) para handoffs con adquirentes/partners.</p>
+  </section>
+
+  <section>
+    <h2>Endpoints de ejemplo (mock)</h2>
+    <ul>
+      <li>Autorización: <code>POST /v1/payments/authorize</code></li>
+      <li>Notificaciones: <code>POST /v1/webhooks/settlement</code></li>
+    </ul>
+    <p><em>Nota:</em> Este sitio es solo demostrativo; no procesa datos reales.</p>
+  </section>
+
+  <section>
+    <h2>Checklist de handoff</h2>
+    <ol>
+      <li>Contrato de API y ejemplos (request/response) adjuntos.</li>
+      <li>Esquema de firma (HMAC/keys) y rotación.</li>
+      <li>Ambientes: <strong>Sandbox</strong> → <strong>UAT</strong> → <strong>Prod</strong>.</li>
+      <li>Plan de pruebas: casos felices, borde y error.</li>
+      <li>Playbook de rollback y contact list 24/7.</li>
+    </ol>
+  </section>
+</body>
+</html>
